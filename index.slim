@@ -1,0 +1,14 @@
+h1
+  = values_at('REMOTE_ADDR')
+  = ip
+  = Time.now
+table
+  thead
+    tr
+      th Name
+      th Value
+  tbody
+    - env.each do |k,v|
+      tr
+        td = k
+        td = v
